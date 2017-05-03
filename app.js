@@ -1,7 +1,11 @@
 angular
-  .module("guageModule", [])
-  .controller("guageCTRL", guageCTRL);
+  .module("gaugeModule", [])
+  .controller("gaugeCTRL", gaugeCTRL);
 
-function guageCTRL($scope){
+
+function gaugeCTRL($scope){
+
   $scope.hi = "hello";
+  $scope.food = "wednesday";
+
 }
