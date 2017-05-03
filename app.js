@@ -1,11 +1,11 @@
-angular
-  .module("gaugeModule", [])
-  .controller("gaugeCTRL", gaugeCTRL);
+var angularDemo = angular.module('angularDemo', ['angular-raphael-gauge']);
 
 
-function gaugeCTRL($scope){
-
-  $scope.hi = "hello";
-  $scope.food = "wednesday";
-
-}
+angularDemo.controller('DemoCtrl', ['$scope', function ($scope) {
+  $scope.gauge = {
+          name: 'Some name',
+          opacity: 0.55,
+          value: 65,
+          text: 'some cool text'
+        };
+}]);
